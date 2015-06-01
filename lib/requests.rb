@@ -10,8 +10,8 @@ class Request
         puts "#{element.last_name}"
         puts "#{element.age}" #does this need to be in a string?
       end
-    if params[:resource] =='id'
-      individual_id = User.find(id)
+    if params[:id] =='id'
+      individual_id = User.find(:id, element)
       individual_id.each do |element|
         puts "#{element.first_name}"
         puts "#{element.last_name}"
