@@ -1,4 +1,6 @@
 require_relative '../db/setup'
+require_relative '../lib/User.rb'
+require_relative '../lib/requests.rb'
 # Remember to put the requires here for all the classes you write and want to use
 
 def parse_params(uri_fragments, query_param_string)
@@ -54,11 +56,7 @@ loop do
   else
     REQUEST = parse(raw_request)
     PARAMS  = REQUEST[:params]
-    # Use the REQUEST and PARAMS constants to full the request and
-    # return an appropriate reponse
 
-    # YOUR CODE GOES BELOW HERE
-
-    # YOUR CODE GOES ABOVE HERE  ^
   end
 end
+
