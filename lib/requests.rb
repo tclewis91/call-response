@@ -10,8 +10,7 @@ class Request
       user.each do |element|
         puts "#{element.first_name}"
         puts "#{element.last_name}"
-        puts "#{element.age}" #does this need to be in a string?
-      end
+        puts "#{element.age}"
     end
 
     if params[:id] != nil
