@@ -1,7 +1,7 @@
 class Request
 
   def initialize
-    @num = [1..4]
+    @num = [*]
   end
 
   def element_methods(params)
