@@ -21,8 +21,8 @@ class Request
         puts "#{element.last_name}"
         puts "#{element.age}"
       end
-    else
-      puts "Error 404 Page Not Found"
+    else params == nil
+      puts "Error 404 Page not found"
     end
   end
 end
