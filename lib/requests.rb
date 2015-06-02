@@ -1,7 +1,7 @@
 class Request
 
   def initialize
-    @num = [*fixnum]
+    @num = [*] #find way to make it infiinite...or change find
   end
 
   def element_methods(params)
@@ -21,7 +21,8 @@ class Request
         puts "#{element.last_name}"
         puts "#{element.age}"
       end
-    else params == nil
+    end
+    if params == nil
       puts "Error 404 Page not found"
     end
   end
