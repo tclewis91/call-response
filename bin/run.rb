@@ -58,7 +58,6 @@ loop do
     params  = request[:params]
     puts request
     Request.new.element_methods(params)
-
   end
 end
 
